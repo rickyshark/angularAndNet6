@@ -78,7 +78,8 @@ export class CategoriesComponent implements AfterViewInit {
         this.categoryService.save(category).subscribe((categorySaved) => {
             console.log('saved', categorySaved);
             this.showForm = false;
-            this.RefreshData();
+          this.RefreshData();
+          //Colocar alerta despues de insertar una nueva categoria.
         })
     }
 
